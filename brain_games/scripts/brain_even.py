@@ -18,11 +18,12 @@ def main():
         if player_answer == right_answer:
             print('Correct!')
             count_of_rounds += 1
+            if count_of_rounds == 3:
+                print(f'Congratulations, {name}!')
         else:
             print(f'''{player_answer} is wrong answer ;(. Correct answer was {right_answer}.
 Let's try again, {name}!''')
-            count_of_rounds = 0
-    print(f'Congratulations, {name}!')
+            break
 
 if __name__ == '__main__':
     main()
