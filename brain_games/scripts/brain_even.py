@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 
 
-from ..games.engine import engine
+from brain_games.engine import engine
 from ..games import even
-
-import sys
-sys.path.append("../games")
 
 
 def main():
