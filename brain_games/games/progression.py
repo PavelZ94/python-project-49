@@ -5,7 +5,7 @@ INTRO = 'What number is missing in the progression?'
 
 def current_game():
     number1 = random.randint(1, 5)
-    number2 = random.randint(15, 20)
+    number2 = random.randint(17, 20)
     period = random.randint(1, 3)
     progression = list(range(number1, number2, period))
     chosen_number = random.choice(progression)
