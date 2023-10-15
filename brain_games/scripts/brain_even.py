@@ -2,7 +2,7 @@
 
 
 from brain_games.engine import engine
-from ..games import even
+from brain_games.games import even
 
 
 def main():
