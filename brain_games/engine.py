@@ -34,5 +34,4 @@ Let's try again, {player_name}!''')
         elif player_answer == right_answer:
             print('Correct!')
             count_of_rounds += 1
-            if count_of_rounds == 3:
-                return (print(f"Congratulations, {player_name}!"))
+    return (print(f"Congratulations, {player_name}!"))
