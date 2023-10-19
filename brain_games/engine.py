@@ -12,8 +12,8 @@ def engine(game):
 
     while count_of_rounds != 3:
         question, right_answer = game.current_game()
-        print(f"Question: {question}")
-        player_answer = prompt.string("Your answer: ")
+        print(f'Question: {question}')
+        player_answer = prompt.string('Your answer: ')
 
         if player_answer != right_answer:
             print(f'''{player_answer} is wrong answer ;(.
@@ -23,4 +23,4 @@ Let's try again, {player_name}!''')
         elif player_answer == right_answer:
             print('Correct!')
             count_of_rounds += 1
-    return (print(f"Congratulations, {player_name}!"))
+    return (print(f'Congratulations, {player_name}!'))

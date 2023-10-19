@@ -2,6 +2,7 @@ import random
 
 INTRO = 'What is the result of the expression?'
 
+
 def calculate(number1, number2, get_operator):
     if '+' == get_operator:
         right_answer = str(number1 + number2)

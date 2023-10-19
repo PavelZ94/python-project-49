@@ -2,9 +2,11 @@ import random
 
 INTRO = 'What number is missing in the progression?'
 
+
 def calculate(chosen_number):
     right_answer = str(chosen_number)
     return right_answer
+
 
 def current_game():
     number1 = random.randint(1, 5)

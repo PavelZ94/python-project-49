@@ -3,6 +3,7 @@ import random
 
 INTRO = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
+
 def calculate(number):
     if number > 1:
         results = []
@@ -14,6 +15,7 @@ def calculate(number):
             else:
                 right_answer = 'yes'
         return right_answer
+
 
 def current_game():
     number = random.randint(1, 100)
