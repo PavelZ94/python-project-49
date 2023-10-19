@@ -8,7 +8,7 @@ def calculate(question):
         right_answer = 'yes'
     else:
         right_answer = 'no'
-    return(right_answer)
+    return right_answer
 
 def current_game():
     question = random.randint(1, 100)

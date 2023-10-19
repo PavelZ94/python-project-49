@@ -9,7 +9,7 @@ def calculate(number1, number2, get_operator):
         right_answer = str(number1 - number2)
     if "*" == get_operator:
         right_answer = str(number1 * number2)
-    return(right_answer)
+    return right_answer
 
 
 def current_game():
