@@ -4,7 +4,7 @@ import random
 INTRO = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def calculate(question):
+def is_even(question):
     if question % 2 == 0:
         right_answer = 'yes'
     else:
@@ -14,5 +14,5 @@ def calculate(question):
 
 def current_game():
     question = random.randint(1, 100)
-    right_answer = calculate(question)
+    right_answer = is_even(question)
     return (question, right_answer)
