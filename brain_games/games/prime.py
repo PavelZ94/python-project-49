@@ -11,14 +11,14 @@ def is_prime(number):
             result = number % i
             results.append(result)
             if 0 in results:
-                right_answer = 'no'
+                right_answer = False
             else:
-                right_answer = 'yes'
+                right_answer = True
         return right_answer
 
 
 def current_game():
     number = random.randint(1, 100)
     question = f'{number}'
-    right_answer = is_prime(number)
+    right_answer = 'yes' if is_prime(number) else 'no'
     return (question, right_answer)
