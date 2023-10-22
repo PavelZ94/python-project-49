@@ -16,5 +16,4 @@ def current_game():
     number2 = random.randint(17, 20)
     period = random.randint(1, 3)
     question, right_answer = make_question(number1, number2, period)
-    right_answer = str(right_answer)
-    return (question, right_answer)
+    return (question, str(right_answer))
