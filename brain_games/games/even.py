@@ -5,11 +5,7 @@ INTRO = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(question):
-    if question % 2 == 0:
-        right_answer = True
-    else:
-        right_answer = False
-    return right_answer
+    return bool(question % 2 == 0)
 
 
 def current_game():

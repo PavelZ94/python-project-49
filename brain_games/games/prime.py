@@ -5,16 +5,12 @@ INTRO = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
-    if number > 1:
-        results = []
-        for i in range(2, number):
-            result = number % i
-            results.append(result)
-            if 0 in results:
-                right_answer = False
-            else:
-                right_answer = True
-        return right_answer
+    if number <= 1:
+        return False
+    for i in range(2, number):
+        if number % i == 0:
+            return False
+    return True
 
 
 def current_game():
